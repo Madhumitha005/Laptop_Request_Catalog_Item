@@ -7,9 +7,7 @@
 
 ## 1. Video Link
 
-https://drive.google.com/file/d/1gpr2M1iXRYeriruoQ2TpO4iw-uJhv2SN/view?usp=drive_link
-
-(Note: Replace the URL above with your actual video link, e.g., from YouTube or Google Drive.)
+https://drive.google.com/file/d/1TODPk6lQ5VRb_dS_6KZ7l-qJfBfhR5ab/view?usp=drive_link
 
 ---
 
