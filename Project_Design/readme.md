@@ -2,19 +2,19 @@
 
 * *Project Name:* LAPTOP REQUEST CATALOG ITEM
 * *Team ID:* NM2025TMID04453
-* *Date:* 02 NOVEMBER 2025
+* *Date:* 02 November 2025
 
 ---
 
 ## 1. Problem-Solution Fit
 
-This phase defines the direct relationship between the user's problem and the solution we are building.
+This phase defines the direct relationship between the user's problem and the designed solution.
 
 ### Problem
-University staff and students face significant difficulties in requesting laptops. The current manual, email-based processes cause delays, lack transparency, and lead to frequent miscommunication. There is no centralized system, resulting in approval bottlenecks, duplicate requests, and inefficient asset tracking.
+Users (university staff and students) face significant difficulties in requesting laptops for academic or administrative purposes. The current manual or email-based processes cause delays, lack transparency, and lead to frequent miscommunication. There is no centralized system, resulting in approval bottlenecks, duplicate requests, and inefficient asset tracking.
 
 ### Solution
-A digital ServiceNow-based Laptop Request Catalog Item provides a structured, automated workflow. This solution simplifies the process with an easy-to-use online form, reduces approval delays, and ensures full transparency in request tracking.
+A digital ServiceNow-based Laptop Request Catalog Item provides a structured, automated workflow. This solution simplifies the process with an easy-to-use online form, reduces approval delays, and ensures full transparency in request tracking. The system effectively meets user needs by connecting them with the right IT resources.
 
 ### Purpose of the Solution
 * To provide an easy and efficient way for users to request laptops through an online system.
@@ -27,29 +27,26 @@ A digital ServiceNow-based Laptop Request Catalog Item provides a structured, au
 
 ## 2. Proposed Solution
 
-The proposed solution is a comprehensive *Laptop Request Catalog Item* built on the ServiceNow platform. This system will digitize the entire request lifecycle, from initial submission to final delivery and asset tracking.
+Based on the problems identified, the team agreed to create a streamlined laptop request catalog item with automated approvals. The proposed solution is a digital catalog form in ServiceNow that automates submissions and approvals.
 
-The solution is designed to address the specific pains of both students and administrators:
-* *For Students (Requesters):* A streamlined digital request form where they can submit, track, and receive automatic updates. This eliminates the frustration and uncertainty of manual processes.
-* *For IT Administrators:* An automated approval workflow with central visibility. This prevents lost requests, ensures traceability, and enables faster, more accurate laptop allocation.
-
-*Key features identified during brainstorming include:*
-* A user-friendly catalog form with fields for model, justification, and required date.
-* An automated manager approval workflow that triggers before the request is submitted for fulfillment.
-* Dynamic model selection based on current availability.
-* Automated email notifications for each approval stage to keep all stakeholders informed.
+Key features of the proposed solution include:
+* *Digital Catalog Form:* Create a catalog item in ServiceNow with fields for model, justification, and required date.
+* *Automated Approvals:* Add a manager approval workflow that triggers before the request is submitted for fulfillment. This reduces manual intervention.
+* *Dynamic Content:* Include dynamic model selection based on current availability.
+* *Notifications:* Integrate email notifications for each approval stage to keep users and approvers informed.
+* *Validation:* Implement validation rules to prevent duplicate requests and ensure all required details are submitted.
 
 ---
 
 ## 3. Solution Architecture
 
-The solution is architected as a complete, end-to-end process within ServiceNow. The design and deployment process follows these key steps:
+The solution is architected as an end-to-end design and deployment process within ServiceNow. The high-level architecture follows these steps:
 
-1.  *Design the Laptop Needs (Form):* Create the user-facing catalog item form in ServiceNow.
-2.  *Identify Laptops (Catalog):* Define the available laptop models that users can request.
-3.  *Configure the Approval Workflow:* Build the automated, hierarchical approval workflow (e.g., for manager approval).
-4.  *Configure Workflow (Fulfillment):* Create the fulfillment tasks for the IT team that trigger after approval.
+1.  *Design the Laptop Needs:* Define and design the user-facing catalog request form.
+2.  *Identify Laptops:* Specify the laptop models and details available to be requested.
+3.  *Configure the Approval Workflow:* Build the automated, hierarchical approval workflow (e.g., manager approval).
+4.  *Configure Workflow (Fulfillment):* Create the automated fulfillment workflow that generates tasks for the IT team post-approval.
 5.  *Integrate with CMDB:* Connect the workflow to the Configuration Management Database (CMDB) for accurate asset tracking and management.
-6.  *Automate Notifications:* Configure email and portal notifications for users and approvers at key stages.
-7.  *Test and Validate Process:* Thoroughly test the entire flow, from submission to approval and task generation.
-8.  *Deploy and Monitor Requests:* Make the catalog item available to users and monitor its performance.
+6.  *Automate Notifications:* Configure automated email and portal notifications for all stakeholders.
+7.  *Test and Validate Process:* Thoroughly test the end-to-end process to ensure all components function correctly.
+8.  *Deploy and Monitor Requests:* Deploy the catalog item to the production environment and monitor incoming requests.
